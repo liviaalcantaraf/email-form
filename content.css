@@ -1,0 +1,25 @@
+:root {
+  --darkgray: #212329;
+  --brightred: #f9423d;
+  --white: #fff;
+  --lightref: #f9433dcc;
+}
+.main {
+  background-color: var(--darkgray);
+}
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  height: 90vh;
+  background-color: var(--darkgray);
+}
+
+.main-content {
+  justify-content: start;
+  margin-left: 20px;
+  color: var(--white);
+}
