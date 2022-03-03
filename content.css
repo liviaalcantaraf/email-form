@@ -22,4 +22,59 @@
   justify-content: start;
   margin-left: 20px;
   color: var(--white);
+  width: 80%;
+}
+
+.main-content h1 {
+  font-size: 35px;
+}
+
+.main-content p {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.main-btn {
+  font-size: 15px;
+  background-color: var(--brightred);
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  color: var(--white);
+  margin-top: 10px;
+  cursor: pointer;
+  position: relative;
+  transition: 200ms ease-in-out;
+  outline: none;
+}
+
+.main-btn a {
+  position: relative;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.main-btn:hover {
+  opacity: 0.8;
+  background-color: aqua;
+}
+
+.image {
+  height: 80%;
+  width: 80%;
+}
+
+/*mobile responsive */
+
+@media (max-width: 768px) {
+  .main-container {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-self: center;
+    width: 90%;
+    margin: 0 auto;
+    height: 90vh;
+    background-color: var(--darkgray);
+  }
 }
