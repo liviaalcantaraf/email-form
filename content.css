@@ -50,6 +50,7 @@
 
 .main-btn a {
   position: relative;
+  z-index: 2;
   color: var(--white);
   text-decoration: none;
 }
