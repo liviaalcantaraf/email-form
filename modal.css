@@ -1,6 +1,10 @@
 :root {
   --errorColor: #f00e0e;
   --validColor: #0add0a;
+  --darkgray: #212329;
+  --brightred: #f9423d;
+  --white: #fff;
+  --lightred: #f9433dcc;
 }
 
 .modal {
@@ -49,4 +53,31 @@
 .modal-content-right {
   border-radius: 0 3px 3px 0;
   position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 2%;
+  right: 3%;
+  font-size: 1.5rem;
+  z-index: 1;
+}
+
+.close-btn:hover {
+  cursor: pointer;
+  color: var(--brightred);
+  transition: 0.2 ease-in-out;
+}
+
+.modal-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

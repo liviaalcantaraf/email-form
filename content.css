@@ -2,7 +2,7 @@
   --darkgray: #212329;
   --brightred: #f9423d;
   --white: #fff;
-  --lightref: #f9433dcc;
+  --lightred: #f9433dcc;
 }
 .main {
   background-color: var(--darkgray);
