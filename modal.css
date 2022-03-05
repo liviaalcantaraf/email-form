@@ -81,3 +81,33 @@
   justify-content: center;
   align-items: center;
 }
+
+.modal-form {
+  font-size: 1rem;
+  text-align: start;
+  width: 80%;
+  margin-bottom: 1rem;
+}
+
+.modal-form h1 {
+  font-size: 1rem;
+  text-align: start;
+  width: 80%;
+  margin-bottom: 1rem;
+}
+
+.form-validation {
+  margin-bottom: 0.5rem;
+  width: 80%;
+}
+
+.modal-input {
+  display: block;
+  padding-left: 0.5rem;
+  outline: none;
+  border-radius: 2px;
+  border: none;
+  height: 2rem;
+  width: 100%;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
+}
