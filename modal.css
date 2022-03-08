@@ -186,7 +186,7 @@ modal-input::placeholder {
   }
 }
 
-@media screean and (max-width: 480px) {
+@media screean and (max-width: 580px) {
   .modal-content {
     margin: 20% auto;
     width: 90%;

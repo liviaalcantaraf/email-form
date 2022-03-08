@@ -1,11 +1,11 @@
 :root {
-  --darkgray: #212329;
-  --brightred: #f9423d;
+  --primary-color: #1c1124;
+  --second-color: #684656;
   --white: #fff;
-  --lightred: #f9433dcc;
+  --third-color: #de774e;
 }
 .main {
-  background-color: var(--darkgray);
+  background-color: var(--primary-color);
 }
 .main-container {
   display: grid;
@@ -15,7 +15,7 @@
   width: 80%;
   margin: 0 auto;
   height: 90vh;
-  background-color: var(--darkgray);
+  background-color: var(--primary-color);
 }
 
 .main-content {
@@ -36,7 +36,7 @@
 
 .main-btn {
   font-size: 15px;
-  background-color: var(--brightred);
+  background-color: var(--second-color);
   padding: 8px 20px;
   border: none;
   border-radius: 4px;
@@ -57,7 +57,7 @@
 
 .main-btn:hover {
   opacity: 0.8;
-  background-color: aqua;
+  background-color: var(--third-color);
 }
 
 .image {
@@ -76,7 +76,7 @@
     width: 90%;
     margin: 0 auto;
     height: 90vh;
-    background-color: var(--darkgray);
+    background-color: var(--primary-color);
   }
   .main-content {
     justify-content: center;
