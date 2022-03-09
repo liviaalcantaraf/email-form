@@ -11,6 +11,7 @@ const modal = document.getElementById("email-modal");
 const openBtn = document.querySelector(".main-btn");
 const closeBtn = document.querySelector(".close-btn");
 
+//click events
 openBtn.addEventListener("click", () => {
   modal.style.display = "block";
 });
@@ -31,7 +32,6 @@ const password = document.getElementById("password");
 const passwordConfirm = document.getElementById("password-confirm");
 
 // show error message
-
 function showError(input, message) {
   const formValidation = input.parentElement;
   formValidation.className = "form-validation error";
@@ -43,7 +43,7 @@ function showError(input, message) {
 // show valid message
 function showValid(input) {
   const formValidation = input.parentElement;
-  formValidation.className = "form-formValidation valid";
+  formValidation.className = "form-validation valid";
 }
 
 // check required items
@@ -60,13 +60,13 @@ function checkRequired(inputArr) {
 
 // check input
 
-function checkLenght(input, min, max) {
-  if (input.value.lenght < min) {
+function checkLength(input, min, max) {
+  if (input.value.length < min) {
     showError(
       input,
       `${getFieldName(input)} must be at least ${min} characters`
     );
-  } else if (input.value.lenght > max) {
+  } else if (input.value.length > max) {
     showError(
       input,
       `${getFieldName(input)} must be less than ${max} characters`
@@ -95,8 +95,8 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   checkRequired([name, email, password, passwordConfirm]);
-  checkLenght(name, 3, 30);
-  checkLenght(password, 8, 25);
-  checkLenght(passwordConfirm, 8, 25);
+  checkLength(name, 3, 30);
+  checkLength(password, 8, 25);
+  checkLength(passwordConfirm, 8, 25);
   passwordMatch(password, passwordConfirm);
 });

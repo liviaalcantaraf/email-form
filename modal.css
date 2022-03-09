@@ -64,7 +64,7 @@
 .close-btn:hover {
   cursor: pointer;
   color: var(--brightred);
-  transition: 0.2 ease-in-out;
+  transition: 200ms ease-in-out;
 }
 
 .modal-form {
@@ -78,13 +78,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.modal-form {
-  font-size: 1rem;
-  text-align: start;
-  width: 80%;
-  margin-bottom: 1rem;
 }
 
 .modal-form h1 {
@@ -105,14 +98,12 @@
   border: 1px solid var(--errorColor);
   border-radius: 2px;
 }
-
 .form-validation.valid {
   margin-bottom: 0.5rem;
   position: relative;
   border: 1px solid var(--validColor);
   border-radius: 2px;
 }
-
 .form-validation p {
   font-size: 0.7rem;
   margin-top: 0.5rem;
@@ -121,10 +112,11 @@
   top: 1.8rem;
   display: none;
 }
-
+/* here*/
 .form-validation.error p {
   display: block;
 }
+/* here*/
 
 .modal-input {
   display: block;
@@ -171,7 +163,7 @@ modal-input::placeholder {
   font-size: 600;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 758px) {
   .modal-content-left {
     display: none;
   }
