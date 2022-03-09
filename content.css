@@ -66,6 +66,19 @@
   height: 70%;
   width: 70%;
 }
+.app-footer {
+  background-color: var(--primary-color);
+  text-align: center;
+  padding-bottom: 40px;
+  font-size: 12px;
+  color: var(--white);
+  font-family: "Roboto Mono", monospace;
+}
+
+.app-footer a {
+  color: var(--white);
+  text-decoration: none;
+}
 
 /*mobile responsive */
 
